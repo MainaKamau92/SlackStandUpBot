@@ -12,7 +12,7 @@ def fetch_reply_blocks(last_24, next_24, blockers, slack_id):
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": f":tada: :tada: <@{slack_id}>! just poisted their stand up"
+				"text": f":tada: :tada: <@{slack_id}>! just posted their stand up"
 			}
 		},
 		{
@@ -108,7 +108,7 @@ def handle_command(body, ack, client, logger):
 				"multiline": True,
 				"placeholder": {
 					"type": "plain_text",
-					"text": "What do you want to ask of the world?"
+					"text": "What did you do last 24 hours?"
 				}
 			},
 			"label": {
@@ -125,7 +125,7 @@ def handle_command(body, ack, client, logger):
 				"multiline": True,
 				"placeholder": {
 					"type": "plain_text",
-					"text": "Where should the poll be sent?"
+					"text": "What will you do today?"
 				}
 			},
 			"label": {
@@ -142,7 +142,7 @@ def handle_command(body, ack, client, logger):
 				"multiline": True,
 				"placeholder": {
 					"type": "plain_text",
-					"text": "First option"
+					"text": "What are the blockers?"
 				}
 			},
 			"label": {
